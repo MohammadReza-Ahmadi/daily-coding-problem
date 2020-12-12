@@ -3,7 +3,7 @@ package _3_height_of_binary_search_tree;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class SolutionTest {
+class Solution2Test {
 
 
     @Test
