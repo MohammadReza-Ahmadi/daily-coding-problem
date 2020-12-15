@@ -8,14 +8,14 @@ class CountOfSubArraysWithZeroSumTest {
     @Test
     public void test_4() {
         int[] array = new int[]{4, -2, -1, 1, -2, 3, -3};
-        int expected = calcCountByBorutForce(array);
+        int expected = calcCountByBruteForce(array);
         Assertions.assertEquals(expected, CountOfSubArraysWithZeroSum.countOfSubArray(array));
     }
 
     @Test
     public void test_8() {
         int[] array = new int[]{4, -2, -1, 1, -2, 3, -3, 1, 1, 3, -3, 5, -5};
-        int expected = calcCountByBorutForce(array);
+        int expected = calcCountByBruteForce(array);
         ;
         Assertions.assertEquals(expected, CountOfSubArraysWithZeroSum.countOfSubArray(array));
     }
@@ -23,7 +23,7 @@ class CountOfSubArraysWithZeroSumTest {
     @Test
     public void test_13() {
         int[] array = new int[]{4, -2, -1, 1, -2, 3, -3, 1, 1, 3, -3, 5, -5, 4, 1, -8, 5, -2};
-        int expected = calcCountByBorutForce(array);
+        int expected = calcCountByBruteForce(array);
         ;
         Assertions.assertEquals(expected, CountOfSubArraysWithZeroSum.countOfSubArray(array));
     }
@@ -31,12 +31,12 @@ class CountOfSubArraysWithZeroSumTest {
     @Test
     public void test_19() {
         int[] array = new int[]{4, -2, -1, 1, -2, 3, -3, 1, 1, 3, -3, 5, -5, 4, 1, -8, 5, -2, 20, 1, -19, 18, -8, -10};
-        int expected = calcCountByBorutForce(array);
+        int expected = calcCountByBruteForce(array);
         ;
         Assertions.assertEquals(expected, CountOfSubArraysWithZeroSum.countOfSubArray(array));
     }
 
-    public int calcCountByBorutForce(int[] array) {
+    public int calcCountByBruteForce(int[] array) {
         int count = 0;
         int sum=0;
         for (int i = 0; i < array.length; i++) {
