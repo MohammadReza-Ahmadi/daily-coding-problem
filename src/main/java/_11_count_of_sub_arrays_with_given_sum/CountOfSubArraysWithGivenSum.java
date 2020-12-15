@@ -9,19 +9,17 @@ public class CountOfSubArraysWithGivenSum {
         Map<Integer, Integer> aux = new HashMap<>();
         int prefixSum = 0;
         int zeroSumCount = 0;
-        int key;
 
-//        aux.put(prefixSum, 1);
+        aux.put(prefixSum, 1);
         for (int i = 0; i < array.length; i++) {
             prefixSum += array[i];
             aux.putIfAbsent(prefixSum, 0);
             int count = aux.get(prefixSum);
             aux.put(prefixSum, ++count);
 
-            aux.put(prefixSum, ++count);
-
-            if (count > 1) {
-                zeroSumCount += (count - 1);
+            int subCount;
+            if (aux.get(prefixSum - sum) != null &&  (subCount = aux.get(prefixSum - sum)) >= 1) {
+                zeroSumCount += subCount;
             }
         }
         return zeroSumCount;
