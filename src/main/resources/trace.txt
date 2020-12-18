@@ -7,3 +7,23 @@ key:     2,  0, -1, 0, -2, 1, -2
 arrCnt:
 
 aux= preSum - givenSum
+
+
+
+0, 1, 0, 0, 0
+1, 1, 0, 1, 1
+
+n=5
+i=2
+ps1= 1
+ps2=2
+curDiff = ps1 - ps2 = 1-2=-1
+difInx= n+curDiff = 5 + (-1) = 4
+diff[difInx] = i =>>  diff[4] = 2
+
+-- union & intersection ----
+a1 = {1,3,4,5,7}
+a2 = {2,3,5,6}
+
+
+
