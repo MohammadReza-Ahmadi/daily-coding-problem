@@ -9,10 +9,6 @@ public class FindFixPointInSortedArray {
     private static int binarySearch(int[] array, int s, int e) {
         if (s >= e && array[s]!=s)
             return -1;
-        if(array[s]==s)
-            return s;
-        if(array[e]==e)
-            return e;
 
         int i = (s + e) / 2;
         if (array[i] == i)
