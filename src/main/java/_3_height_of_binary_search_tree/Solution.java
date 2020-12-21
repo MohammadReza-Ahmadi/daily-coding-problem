@@ -23,17 +23,18 @@ public class Solution {
         Node right;
     */
     public static int height(Node root) {
-        return innerHeight(root,-1);
+        return innerHeight(root, -1);
     }
 
     public static int innerHeight(Node root, int maxHeight) {
-        if(root==null)
+        if (root == null)
             return maxHeight;
         maxHeight++;
-        return Math.max(innerHeight(root.left,maxHeight),innerHeight(root.right,maxHeight));
+        return Math.max(innerHeight(root.left, maxHeight), innerHeight(root.right, maxHeight));
     }
 
     public static Node insert(Node root, int data) {
+        // {25, 20, 15, 27, 30, 29, 26, 22, 32}
         if (root == null) {
             return new Node(data);
         } else {

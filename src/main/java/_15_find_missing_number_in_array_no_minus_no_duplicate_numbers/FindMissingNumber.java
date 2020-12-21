@@ -1,4 +1,4 @@
-package _15_find_missing_number_in_array;
+package _15_find_missing_number_in_array_no_minus_no_duplicate_numbers;
 
 public class FindMissingNumber {
 
